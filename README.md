@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# View available housing listings, update profile, make collections and more...
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
