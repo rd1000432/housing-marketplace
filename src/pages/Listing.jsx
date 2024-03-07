@@ -44,9 +44,11 @@ function Listing() {
   return (
     <main>
       <Swiper
+        loop={true}
         slidesPerView={1}
         navigation={{ clickable: true }}
         pagination={{ clickable: true }}
+        scrollbar={{ clickable: true }}
       >
         {listing.imgUrls.map((url, index) => (
           <SwiperSlide key={index}>
@@ -54,7 +56,6 @@ function Listing() {
               style={{
                 background: `url(${listing.imgUrls[index]}) center no-repeat`,
                 backgroundSize: 'cover',
-                height: '100vh',
               }}
               className="swiperSlideDiv"
             ></div>
