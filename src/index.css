@@ -330,6 +330,10 @@ button {
   background-color: #ffffff !important;
 }
 
+.swiper-button-next,.swiper-button-prev {
+  color: #00cc66!important;
+}
+
 .swiperSlideDiv {
   position: relative;
   width: 100%;
@@ -339,6 +343,15 @@ button {
   .swiperSlideDiv {
     height: 30vh;
   }
+  .explore .swiper-button-next, .explore .swiper-button-prev {
+    display: none!important;
+  }
+  .categoryListingDetails {
+    margin-top: 5%;
+  }
+  .editIcon {
+    width: 20px;
+}
 }
 
 .swiperSlideImg {

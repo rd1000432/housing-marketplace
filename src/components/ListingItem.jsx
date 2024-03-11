@@ -8,8 +8,8 @@ function ListingItem({ listing, id, onEdit, onDelete }) {
   return (
     <li className="categoryListing">
       <Link
-        className="categoryListingLink"
         to={`/category/${listing.type}/${id}`}
+        className="categoryListingLink"
       >
         <img
           src={listing.imgUrls[0]}
@@ -21,7 +21,7 @@ function ListingItem({ listing, id, onEdit, onDelete }) {
           <p className="categoryListingName">{listing.name}</p>
 
           <p className="categoryListingPrice">
-            €
+            $
             {listing.offer
               ? listing.discountedPrice
                   .toString()
@@ -31,7 +31,6 @@ function ListingItem({ listing, id, onEdit, onDelete }) {
                   .replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
             {listing.type === 'rent' && ' / Month'}
           </p>
-
           <div className="categoryListingInfoDiv">
             <img src={bedIcon} alt="bed" />
             <p className="categoryListingInfoText">
@@ -52,7 +51,7 @@ function ListingItem({ listing, id, onEdit, onDelete }) {
       {onDelete && (
         <DeleteIcon
           className="removeIcon"
-          fill="rgb(231, 76, 60)"
+          fill="rgb(231, 76,60)"
           onClick={() => onDelete(listing.id, listing.name)}
         />
       )}
